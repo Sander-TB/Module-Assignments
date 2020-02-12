@@ -10,9 +10,9 @@ function validateForm(event) {
 	const firstNameValue = firstName.value;
 
 	if (checkInputLength(firstNameValue) === true) {
-		alert("Yay you did it!");
+		firstNameError.style.display = "none";
 	} else {
-		firstNameError.style.display = none;
+		firstNameError.style.display = "block";
 	}
 }
 
