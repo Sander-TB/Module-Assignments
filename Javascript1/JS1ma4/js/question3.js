@@ -16,6 +16,7 @@ function createGameDetails(json) {
 	name.innerHTML = json.name;
 
 	const image = document.querySelector(".image");
+	image.style.backgroundImage = `url(${json.background_image})`;
 
 	const description = document.querySelector(".description");
 	description.innerHTML = json.description;
@@ -26,5 +27,5 @@ function createGameDetails(json) {
 	const rating = document.querySelector(".rating");
 	rating.innerHTML = json.rating;
 
-	console.dir(image);
+	console.dir(json);
 }
